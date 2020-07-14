@@ -1,3 +1,25 @@
+body {
+    background: slategray;
+}
+
 header {
-    border: 10px solid red;
+    width: 150px;
+    background: black;
+    color: slategray;
+    font-size: 30px;
+    border: 10px solid yellow;
+    margin: 5px 10px;
+    padding: 10px 20px;
+}
+
+main {
+    background: white;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background: lightblue;
+    border: 5px solid black;
 }
