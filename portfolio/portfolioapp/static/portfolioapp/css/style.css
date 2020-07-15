@@ -18,23 +18,45 @@ Layout
 ==== */
 
 header {
-    width: 150px;
-    background: black;
+    text-align: center;
+    background: lightblue;
     color: slategray;
     font-size: 30px;
-    border: 10px solid yellow;
-    margin: 5px 10px;
+    color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
     padding: 10px 20px;
 }
 
 main {
+    text-align: center;
     background: white;
     padding: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 footer {
     text-align: center;
     background: lightblue;
-    border: 5px solid black;
+    border: 2px solid black;
+}
+
+/* ====
+Class Styles
+==== */
+
+.columns {
+    display: flex;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.column {
+    margin: 0 10px;
+}
+
+.intro {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
 }
