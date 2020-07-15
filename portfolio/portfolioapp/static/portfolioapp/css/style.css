@@ -60,3 +60,8 @@ Class Styles
     margin: 0 auto;
     text-align: center;
 }
+
+.profile_photo {
+    width: 300px;
+    height: 300px
+}
