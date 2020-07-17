@@ -1,5 +1,7 @@
+import os
 from decouple import config, Csv
 import dj_database_url
+import psycopg2
 
 """
 Django settings for portfolio project.
@@ -12,8 +14,6 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-
-import os
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -94,7 +94,7 @@ DATABASES = {
 """
 
 DATABASES = {
-    'default': dj_database_url.config(default=config('DATABASE_URL')),
+    'default': dj_database_url.config(conn_max_age=600, ssl_require=True, default=config('DATABASE_URL')),
     'engine': 'django.db.backends.postgresql_psycopg2'
     }
 
