@@ -139,3 +139,6 @@ STATIC_URL = '/static/'
 # May need to add additional variables for static to work on Heroku
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Optimizes static files with compression and caching
+
+import django_heroku
+django_heroku.settings(locals())
