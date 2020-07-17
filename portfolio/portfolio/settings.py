@@ -1,3 +1,5 @@
+from decouple import config, Csv
+
 """
 Django settings for portfolio project.
 
@@ -12,21 +14,26 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Justin's Note:  If you screw up like I did, use this and decouple your settings!
+# from django.core.management.utils import get_random_secret_key
+# print(get_random_secret_key())
+# Put it in your new, hidden environment variables and make sure git ignores that file!
+SECRET_KEY = config('SECRET_KEY')
+# SECURITY WARNING: keep the secret key used in production secret!
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+me2fdlm712%4zjve(rekyveg^o3xgawbkd_(kit+g(9jhpzsu'
-
+DEBUG = config('DEBUG', default=True, cast=bool)
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
-
+# Allowed_hosts needs to point to environment variables, and must be in CSV format
+# Used recommended shortcut here
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 # Application definition
 
@@ -81,7 +88,6 @@ DATABASES = {
     }
 }
 
-
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
 
@@ -119,3 +125,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# May need to add additional variables for static to work on Heroku
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
