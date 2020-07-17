@@ -16,6 +16,17 @@ function updateTextColor() {
     let colorHex = getRandomColor()
     document.getElementsByTagName("main")[0].style.color = `#${colorHex}`
 }
+
+function loopColors() {
+    for(let i = 0; i<100; i++) {
+        setTimeout(function() {
+                        updateBGColor()
+                        updateTextColor()
+                    }, 1000 * i            // i factor is needed, because all loops start their time together.
+        )
+    }
+}
+
 let bodyColorButton = document.getElementById("bgColorChange")
 bodyColorButton.addEventListener("click", updateBgColor)
 
@@ -23,5 +34,5 @@ let textColorButton = document.getElementById("textColorChange")
 textColorButton.addEventListener("click", updateTextColor)
 
 let surpriseMeButton = document.getElementById("surpriseMe")
-surpriseMeButton.addEventListener("click", updateBgColor)
-surpriseMeButton.addEventListener("click", updateTextColor)
+surpriseMeButton.addEventListener("click", loopColors)
+
