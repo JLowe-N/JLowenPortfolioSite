@@ -17,3 +17,23 @@ document.body.addEventListener("wheel", () => {
     document.getElementById("theSquare").style.background = "orange"
 })
 
+document.addEventListener("keydown", (event) => {
+    console.log(event.which)
+    switch (event.which) {
+        case 66: // b as in blue
+            theSquare.style.background = "blue"
+            break
+        case 82: // r as in red
+            theSquare.style.background = "red"
+            break
+        case 89: // y as in yellow
+            theSquare.style.background = "yellow"
+            break
+        case 71: // g as in green
+            theSquare.style.background = "green"
+            break
+        case 79: // o as in orange
+            theSquare.style.background = "orange"
+            break
+    }
+})
