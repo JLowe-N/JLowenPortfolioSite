@@ -1,5 +1,5 @@
 function getRandomColor() {
-    return Math.floor(Math.random()*16777215).toString(16)
+    return Math.floor(Math.random() * 16777215).toString(16)
 }
 
 function updateBGColor() {
@@ -18,11 +18,11 @@ function updateTextColor() {
 }
 
 function loopColors() {
-    for(let i = 0; i<100; i++) {
-        setTimeout(function() {
-                        updateBGColor()
-                        updateTextColor()
-                    }, 1000 * i            // i factor is needed, because all loops start their time together.
+    for (let i = 0; i < 5; i++) {
+        setTimeout(function () {
+            updateBGColor()
+            updateTextColor()
+        }, 1000 * i            // i factor is needed, because all loops start their time together.
         )
     }
 }

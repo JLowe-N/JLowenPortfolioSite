@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from portfolioapp.views import IndexView
+from portfolioapp.views import IndexView, EventListenersView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('eventlisteners', EventListenersView.as_view()),
     path('', IndexView.as_view())
 ]

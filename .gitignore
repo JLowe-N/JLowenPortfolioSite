@@ -3,3 +3,12 @@
 /portfolio/.env
 /venv2/
 /.env
+portfolio/__pycache__/__init__.cpython-38.pyc
+portfolio/__pycache__/settings.cpython-38.pyc
+portfolio/__pycache__/wsgi.cpython-38.pyc
+portfolioapp/__pycache__/__init__.cpython-38.pyc
+portfolioapp/__pycache__/models.cpython-38.pyc
+portfolioapp/__pycache__/views.cpython-38.pyc
+portfolioapp/migrations/__pycache__/__init__.cpython-38.pyc
+portfolioapp/__pycache__/admin.cpython-38.pyc
+portfolio/__pycache__/urls.cpython-38.pyc

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Event Listeners</title>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link href="{% static 'portfolioapp/css/eventpage.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Event Listener Examples</h1>
+    </header>
+
+    <main>
+        <div id="intro">
+            <p>
+                This square has several event listeners that will trigger a
+                background color change when the user supplies a matching input.
+            </p>
+            <div id="theSquare">
+                <!-- padded square -->
+            </div>
+        </div>
+
+    </main>
+    <script src="{% static portfolioapp/js/eventpage.js %}"></script>
+</body>
+
+</html>
