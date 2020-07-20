@@ -1,5 +1,8 @@
 let theSquare = document.getElementById("theSquare")
 
+/*===== Padded Square JS Event Listeners 
+=====*/
+
 theSquare.addEventListener("mouseover", (event) => {
     event.target.style.background = "blue"
 })
@@ -18,7 +21,6 @@ document.body.addEventListener("wheel", () => {
 })
 
 document.addEventListener("keydown", (event) => {
-    console.log(event.which)
     switch (event.which) {
         case 66: // b as in blue
             theSquare.style.background = "blue"
@@ -37,3 +39,6 @@ document.addEventListener("keydown", (event) => {
             break
     }
 })
+
+/*===== Input Text-Field Event Listeners
+=====*/

@@ -9,8 +9,12 @@ h1 {
     color: slategray;
 }
 
-#intro {
+main {
+    width: 800px;
     margin: 0 auto;
+}
+
+#intro {
     text-align: center;
 }
 
