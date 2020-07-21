@@ -31,3 +31,7 @@ main {
     height: 200px;
     margin: 0 auto;
 }
+
+#textFieldExample {
+        width: 400px;
+}

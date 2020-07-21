@@ -48,29 +48,21 @@ let postButton = document.getElementById("postButton")
 
 function inputTextFocusHandler() {
     textFieldExample.style.background = "lightblue"
-    if (textFieldExample.value === "Add a value to the list below") {
-        textFieldExample.value = ""
-    }
 }
 
 function inputTextBlurHandler() {
     textFieldExample.style.background = "white"
-    if (textFieldExample.value === "") {
-        textFieldExample.value = "Add a value to the list below"
-    }
 }
 
 function postSubmitHandler() {
     if (textFieldExample.value.length < 5) {
         alert("List input must be at least 5 characters in length.")
-    } else if (textFieldExample.value === "Add a value to the list below") {
-        alert("Please enter your own list item text before submitting.")
     } else {
         let postList = document.getElementById("postList")
         let newLi = document.createElement("li")
         newLi.textContent = textFieldExample.value
         postList.append(newLi)
-        textFieldExample.value = "Add a value to the list below"
+        textFieldExample.value = ""
     }
 }
 
