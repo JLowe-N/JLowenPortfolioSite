@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Justin Lowen</title>
@@ -7,6 +8,7 @@
     {% load static %}
     <link href="{% static 'portfolioapp/css/style.css' %}" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <p>Welcome to my Portfolio</p>
@@ -14,11 +16,13 @@
 
     <main>
         <div class="intro">
-        <p>This site is still being built. Here I will discuss my professional background and projects.</p>
+            <p>This site is still being built. Here I will discuss my professional background and projects.</p>
         </div>
         <button id="bgColorChange">Random Body Color</button>
         <button id="textColorChange">Random Text Color</button>
         <button id="surpriseMe">Surprise Me</button>
+        <h3>Projects:</h3>
+        <p><a href="/eventlisteners">JS Event Listeners Practice</a></p>
     </main>
 
     <footer>
@@ -52,6 +56,7 @@
 
     </footer>
 
-<script src="{% static 'portfolioapp/js/index.js' %}"></script>
+    <script src="{% static 'portfolioapp/js/index.js' %}"></script>
 </body>
+
 </html>
