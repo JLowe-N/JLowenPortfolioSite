@@ -6,14 +6,13 @@ body {
 }
 
 /* Typography */
-
 h1, h2, h3, p {
     margin-top: 0px;
 }
 
 h1 {
     font-size: 60px;
-    color: slategray;
+    margin-bottom: 0;
 }
 
 /* layout */
@@ -68,11 +67,19 @@ footer {
     background: darkblue
 }
 
+h2, p {
+    margin-bottom: 20px;
+}
+
 /* displays */
+
+#textFieldExample {
+    width: 400px;
+}
 
 #postDiv {
     width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     text-align: left;
     border: 2px solid black;
 }
@@ -81,9 +88,6 @@ footer {
     border: 2px solid black;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
-#textFieldExample {
-        width: 400px;
-}
