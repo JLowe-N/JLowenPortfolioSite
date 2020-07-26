@@ -10,3 +10,8 @@ class IndexView(View):
 class EventListenersView(View):
     def get(self, request, *args, **kwargs):
         return render(request, "portfolioapp/eventlisteners.html", context={})
+
+
+class CardBattleView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, "portfolioapp/CardBattle.html", context={})

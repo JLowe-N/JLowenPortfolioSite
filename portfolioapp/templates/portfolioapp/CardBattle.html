@@ -1,0 +1,43 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Card Battle</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@400;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'portfolioapp/css/CardBattle.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Card Battle</h1>
+        <h2 id="gameMessage">Game Start - Get Your Opponent to Less Than 5 Cards</h2>
+    </header>
+
+    <main>
+        <div class="gameWindow">
+            <div class="playerWindow">
+                <p id="p1CardsLeft" class="gameStat">P1 Cards left</p>
+                <p id="p1CardName" class="gameStat">P1 Card name</p>
+                <p id="p1CardPower" class="gameStat">P1 Card power</p>
+            </div>
+            <div class="playerWindow">
+                <p id="p2CardsLeft" class="gameStat">P2 Cards left</p>
+                <p id="p2CardName" class="gameStat">P2 Card name</p>
+                <p id="p2CardPower" class="gameStat">P2 Card power</p>
+            </div>
+        </div> <!-- /gameWindow -->
+    </main>
+
+    <footer>
+        <div id="gameMenu">
+            <p id="limboCardsLeft">Limbo Cards Left: -</p>
+            <button id="battleBtn">Battle!</button>
+            <button id="resetBtn">Reset Game</button>
+        </div>
+    </footer>
+    <script src="{% static 'portfolioapp/js/CardBattle.js' %}"></script>
+</body>
+
+</html>
