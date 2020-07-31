@@ -19,15 +19,19 @@ Typography
 Layout
 ==== */
 
+
+/* ========
+    Navbar
+=========== */
+
 header {
     text-align: center;
     background: lightblue;
     color: slategray;
-    font-size: 30px;
     color: black;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
-    padding: 10px 20px;
+    padding: 2em 1em;
 }
 
 nav, .logo, .links {
@@ -39,6 +43,7 @@ nav, .logo, .links {
 
 .title {
     margin-bottom: 0.25em;
+    font-size: 5rem;
 }
 
 .logo {
@@ -48,16 +53,35 @@ nav, .logo, .links {
 
 .image-header {
     display: block;
-    width: 150px;
-    height: 150px;
+    width: 20vh;
+    height: 20vh;
     border-radius: 50%;
     border: 2px solid black;
     object-fit: cover;
 }
 
+a {
+    text-decoration: none;
+    color: #414141;
+}
+
 .link {
     margin: 0.5em;
+    font-size: 4rem;
 }
+
+.link:focus, .link:hover, .link-current {
+    border-bottom: 4px solid black;
+    color: #111;
+}
+
+.link-current {
+    
+}
+
+/* ==========
+Main Content
+============= */
 
 main {
     text-align: center;
