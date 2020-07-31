@@ -42,7 +42,7 @@ nav, .logo, .links {
 }
 
 .title {
-    margin-bottom: 0.25em;
+    margin-bottom: 0.4em;
     font-size: 5rem;
 }
 
@@ -53,8 +53,8 @@ nav, .logo, .links {
 
 .image-header {
     display: block;
-    width: 20vh;
-    height: 20vh;
+    width: 15vh;
+    height: 15vh;
     border-radius: 50%;
     border: 2px solid black;
     object-fit: cover;
@@ -67,7 +67,7 @@ a {
 
 .link {
     margin: 0.5em;
-    font-size: 4rem;
+    font-size: 3.5rem;
     padding: 0.25em;
     border-bottom: 4px solid transparent;
     
