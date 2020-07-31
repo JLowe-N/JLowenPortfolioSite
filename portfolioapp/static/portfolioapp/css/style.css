@@ -12,8 +12,21 @@ body {
 Typography
 ==== */
 
+h1, h2, h3, p, a, em, strong {
+    font-family: 'Roboto', sans-serif;
+}
 
+h1, h2, h3, strong {
+    font-weight: 700;
+}
 
+p, a {
+    font-weight: 400;
+}
+
+em {
+    font-weight: 300;
+}
 
 /* ====
 Layout
@@ -76,10 +89,6 @@ a {
 .link:focus, .link:hover, .link-current {
     border-bottom: 4px solid black;
     color: #111;
-}
-
-.link-current {
-    
 }
 
 /* ==========
