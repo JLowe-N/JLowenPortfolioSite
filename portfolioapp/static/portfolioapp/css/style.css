@@ -5,7 +5,7 @@ Global Settings
 body {
     background: slategray;
     margin: 0;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* ====
@@ -30,8 +30,20 @@ header {
     padding: 10px 20px;
 }
 
+nav, .logo, .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    margin-bottom: 0.25em;
+}
+
 .logo {
     width: 50%;
+    margin-bottom: 0.25em;
 }
 
 .image-header {
@@ -41,6 +53,10 @@ header {
     border-radius: 50%;
     border: 2px solid black;
     object-fit: cover;
+}
+
+.link {
+    margin: 0.5em;
 }
 
 main {
