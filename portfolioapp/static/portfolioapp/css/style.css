@@ -56,11 +56,11 @@ nav, .logo, .links {
 
 .title {
     margin-bottom: 0.4em;
-    font-size: 5rem;
+    font-size: 2rem;
 }
 
 .logo {
-    width: 50%;
+    width: 90%;
     margin-bottom: 0.25em;
 }
 
@@ -74,13 +74,13 @@ nav, .logo, .links {
 }
 
 a {
-    text-decoration: none;
     color: #414141;
 }
 
 .link {
+    text-decoration: none;
     margin: 0.5em;
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     padding: 0.25em;
     border-bottom: 4px solid transparent;
     
@@ -141,6 +141,7 @@ footer {
 .skill-subtitle {
     font-size: 1.5rem;
     margin-top: 0;
+    margin-bottom: 0.25em;
 }
 
 .skill-text {
