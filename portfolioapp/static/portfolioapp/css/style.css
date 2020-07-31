@@ -6,6 +6,7 @@ body {
     background: slategray;
     margin: 0;
     font-size: 1.25rem;
+    line-height: 1.6
 }
 
 /* ====
@@ -145,7 +146,8 @@ footer {
 
 .column {
     margin: 0 10px;
-    width: 90%;
+    width: 100%;
+    max-width: 320px;
 }
 
 .skill-title {
@@ -163,4 +165,9 @@ footer {
     font-size: 1rem;
 }
 
-
+@media (min-width: 500px) {
+    .columns {
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
