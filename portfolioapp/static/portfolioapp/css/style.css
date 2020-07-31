@@ -51,7 +51,7 @@ nav, .logo, .links {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .title {
@@ -60,7 +60,7 @@ nav, .logo, .links {
 }
 
 .logo {
-    width: 90%;
+    width: 40%;
     margin-bottom: 0.25em;
 }
 
@@ -77,11 +77,20 @@ a {
     color: #414141;
 }
 
+a:focus, a:hover {
+    color: #111;
+}
+
+.links {
+    width: 40%;
+    margin: 0.5em 2em;
+}
+
 .link {
     text-decoration: none;
     margin: 0.5em;
     font-size: 1.5rem;
-    padding: 0.25em;
+    padding: 0.1em;
     border-bottom: 4px solid transparent;
     
 }
@@ -89,6 +98,12 @@ a {
 .link:focus, .link:hover, .link-current {
     border-bottom: 4px solid black;
     color: #111;
+}
+
+@media (min-width: 500px) {
+    nav, .links {
+        flex-direction: row;
+    }
 }
 
 /* ==========
