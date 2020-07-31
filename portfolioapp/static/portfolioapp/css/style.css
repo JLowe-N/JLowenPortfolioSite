@@ -68,6 +68,9 @@ a {
 .link {
     margin: 0.5em;
     font-size: 4rem;
+    padding: 0.25em;
+    border-bottom: 4px solid transparent;
+    
 }
 
 .link:focus, .link:hover, .link-current {
