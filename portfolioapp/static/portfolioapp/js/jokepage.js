@@ -5,8 +5,10 @@ const newJokesBtn = document.getElementById("newJokesBtn");
 let punchline;
 
 function getPunchline() {
-    punchlineDiv.classList.add("bubble")
+    punchlineDiv.classList.add("bubble");
     punchlineDiv.innerHTML = punchline;
+    punchlineBtn.classList.toggle("hidden");
+    newJokesBtn.classList.toggle("hidden")
 
 }
 
