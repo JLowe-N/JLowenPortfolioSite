@@ -1,3 +1,20 @@
 body {
     font-family: 'Permanent Marker', 'Roboto', cursive;
+    background: #8d8dff;
+}
+
+/*=====
+Typography
+=====*/
+
+h1 {
+    font-size: 3rem;
+}
+
+div {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem;
 }
