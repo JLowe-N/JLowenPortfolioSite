@@ -1,5 +1,8 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Permanent Marker', 'Roboto', cursive;
+    font-size: 1.5rem;
     background: #b7b7ff;
 }
 
@@ -15,15 +18,16 @@ div {
     font-size: 1.5rem;
 }
 
-button {
-    font-size: 1.5rem;
-    font-family: 'Permanent Marker', 'Roboto', cursive;
-}
-
 /*=====
 Button Design
 =====*/
 
 button {
     background: #c8ebff;
+    padding: 0.25em 0;
+    width: 90%;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
 }
