@@ -19,6 +19,32 @@ div {
 }
 
 /*=====
+Layout
+=====*/
+
+h1 {
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    bottom: 4px;
+    z-index: 1;
+}
+
+.joke {
+    display: flex;
+    padding: 2em 10em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*=====
 Button Design
 =====*/
 
