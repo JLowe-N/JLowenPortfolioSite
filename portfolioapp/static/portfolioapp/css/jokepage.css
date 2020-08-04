@@ -43,6 +43,10 @@ h1::before {
     justify-content: center;
 }
 
+.hidden {
+    display: none;
+}
+
 
 /*=====
 Button Design
