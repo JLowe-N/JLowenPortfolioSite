@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Permanent Marker', 'Roboto', cursive;
+    font-size: 1.5rem;
+    background: #b7b7ff;
+}
+
+/*=====
+Typography
+=====*/
+
+div {
+    font-size: 1.5rem;
+}
+
+/*=====
+Layout
+=====*/
+
+h1 {
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    bottom: 4px;
+    z-index: 1;
+}
+
+.joke {
+    display: flex;
+    padding: 2em 10em;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*=====
+Button Design
+=====*/
+
+button {
+    background: #c8ebff;
+    padding: 0.25em 0;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+/*=====
+Bubble Design
+=====*/
+
+.bubble {
+    display: inline-block;
+    position: relative;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.bubble:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -49px;
+    height: 50px;
+    width: 90px;
+    border-radius: 0 0 100%;
+    box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset;
+    }

@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from portfolioapp.views import IndexView, EventListenersView, CardBattleView
+from portfolioapp.views import IndexView, EventListenersView, CardBattleView, JokePageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('eventlisteners', EventListenersView.as_view()),
     path('cardbattle', CardBattleView.as_view()),
+    path('jokepage', JokePageView.as_view()),
     path('', IndexView.as_view())
 ]
