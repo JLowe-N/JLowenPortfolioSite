@@ -10,10 +10,6 @@ body {
 Typography
 =====*/
 
-h1 {
-    font-size: 3rem;
-}
-
 div {
     font-size: 1.5rem;
 }
@@ -55,7 +51,6 @@ Button Design
 button {
     background: #c8ebff;
     padding: 0.25em 0;
-    width: 90%;
     border-radius: 10px;
     border: 3px solid black;
     font-family: inherit;
@@ -68,7 +63,7 @@ Bubble Design
 =====*/
 
 .bubble {
-    content: "";
+    display: inline-block;
     position: relative;
     padding: 30px 40px;
     border-radius: 10px;
@@ -81,7 +76,7 @@ Bubble Design
     content: "";
     position: absolute;
     left: 0;
-    bottom: -50px;
+    bottom: -49px;
     height: 50px;
     width: 90px;
     border-radius: 0 0 100%;
