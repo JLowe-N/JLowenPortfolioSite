@@ -20,3 +20,8 @@ class CardBattleView(View):
 class JokePageView(View):
     def get(self, request, *args, **kwargs):
         return render(request, "portfolioapp/jokepage.html", context={})
+
+
+class AboutMeView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, "portfolioapp/about-me.html", context={})
