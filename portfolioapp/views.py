@@ -25,3 +25,8 @@ class JokePageView(View):
 class AboutMeView(View):
     def get(self, request, *args, **kwargs):
         return render(request, "portfolioapp/about-me.html", context={})
+
+
+class ProjectsView(View):
+    def get(self, request, *args, **kwargs):
+        return render(request, "portfolioapp/projects.html", context={})

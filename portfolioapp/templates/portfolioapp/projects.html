@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Justin Lowen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    {% load static %}
+    <link href="{% static 'portfolioapp/css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'portfolioapp/img/django-favicon.png' %}" rel="shortcut icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h2 class="title">Justin Lowen</h2>
+                <img class="image-header" src="{% static 'portfolioapp/img/ProfilePhoto.jpg' %}" alt="The author">
+            </div>
+            <div class="links">
+                <a class="link" href="/">Home</a>
+                <a class="link link-current" href="/projects">Projects</a>
+                <a class="link" href="/about-me">About Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <p>Here is a list of my current projects.</p>
+        </div>
+        <h3>Projects:</h3>
+        <p><a href="/eventlisteners">JS Event Listeners Practice</a></p>
+        <p><a href="/jokepage">Programmer Jokes Using API Fetch</a></p>
+    </main>
+
+    <footer>
+        <h2 class="skill-title">My Skills</h2>
+        <div class="columns">
+            <!-- column 1 -->
+            <div class="column">
+                <h3 class="skill-subtitle">Python</h3>
+                <p class="skill-text">
+                    I am able to use Python to create backend applications,
+                    and I am able to create sites using the Django framework.
+                </p>
+            </div>
+            <!-- column 2 -->
+            <div class="column">
+                <h3 class="skill-subtitle">Responsive Web Design</h3>
+                <p class="skill-text">
+                    I understand the importance of a flexible display that is suitable
+                    for any screen-size, browser, and device.
+                </p>
+            </div>
+            <div class="column">
+                <!-- column 3 -->
+                <h3 class="skill-subtitle">JavaScript & React</h3>
+                <p class="skill-text">
+                    I am familiar with the foundations of JavaScript and the React library to make
+                    interactive websites that deliver optimal performance.
+                </p>
+            </div>
+        </div> <!-- /columns -->
+
+    </footer>
+
+    <script src="{% static 'portfolioapp/js/index.js' %}"></script>
+</body>
+
+</html>

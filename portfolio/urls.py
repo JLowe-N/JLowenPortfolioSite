@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path
 
 from portfolioapp.views import IndexView, EventListenersView, CardBattleView, \
-    JokePageView, AboutMeView
+    JokePageView, AboutMeView, ProjectsView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('about-me', AboutMeView.as_view()),
+    path('projects', ProjectsView.as_view()),
     path('eventlisteners', EventListenersView.as_view()),
     path('cardbattle', CardBattleView.as_view()),
     path('jokepage', JokePageView.as_view()),
