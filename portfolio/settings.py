@@ -1,3 +1,4 @@
+import django_heroku
 import os
 from decouple import config, Csv
 import dj_database_url
@@ -40,6 +41,7 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 INSTALLED_APPS = [
     'portfolioapp',
+    'staticapp',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +52,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',  # Note this is now the proper way to integrate WhiteNoise now.
+    # Note this is now the proper way to integrate WhiteNoise now.
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -95,7 +98,7 @@ DATABASES = {
 
 DATABASES = {
     'default': dj_database_url.config(conn_max_age=600, ssl_require=True, default=config('DATABASE_URL')),
-    }
+}
 
 DATABASES['default']['engine'] = 'django.db.backends.postgresql_psycopg2'
 
@@ -141,5 +144,4 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Optimizes static files with compression and caching
 
-import django_heroku
 django_heroku.settings(locals())

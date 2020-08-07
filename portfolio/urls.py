@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 
 from portfolioapp.views import IndexView, EventListenersView, CardBattleView, \
     JokePageView, AboutMeView, ProjectsView
+
+from staticapp.views import punk_Api_beer_app
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,5 +29,6 @@ urlpatterns = [
     path('eventlisteners', EventListenersView.as_view()),
     path('cardbattle', CardBattleView.as_view()),
     path('jokepage', JokePageView.as_view()),
+    path('punk-api-beer-app', punk_Api_beer_app),
     path('', IndexView.as_view())
 ]
