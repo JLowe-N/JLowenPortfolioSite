@@ -4,9 +4,9 @@ from django.views.generic import TemplateView
 from django.conf.urls import url
 
 from portfolioapp.views import IndexView, EventListenersView, CardBattleView, \
-    JokePageView, AboutMeView, ProjectsView, PicSomeView
+    JokePageView, AboutMeView, ProjectsView
 
-from staticapp.views import punk_Api_beer_app
+from staticapp.views import punk_Api_beer_app, PicSomeView
 
 urlpatterns = [
     url(r'/picsome/^', PicSomeView.as_view()),
