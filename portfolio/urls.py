@@ -9,7 +9,7 @@ from portfolioapp.views import IndexView, EventListenersView, CardBattleView, \
 from staticapp.views import punk_Api_beer_app, PicSomeView
 
 urlpatterns = [
-    url(r'/picsome/^', PicSomeView.as_view()),
+    url(r'picsome/', PicSomeView.as_view()),
     path('admin/', admin.site.urls),
     path('about-me', AboutMeView.as_view()),
     path('projects', ProjectsView.as_view()),
