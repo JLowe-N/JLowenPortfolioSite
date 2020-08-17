@@ -136,7 +136,7 @@ USE_TZ = True
 
 # PicSome React App
 REACT_APP_DIR = os.path.join(
-    BASE_DIR, 'portfolioapp\static\portfolioapp\picsomeapp')
+    BASE_DIR, 'portfolioapp', 'static', 'portfolioapp', 'picsomeapp')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
