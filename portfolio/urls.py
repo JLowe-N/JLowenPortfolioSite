@@ -16,13 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.views.generic import TemplateView
+from django.conf.urls import url
 
 from portfolioapp.views import IndexView, EventListenersView, CardBattleView, \
-    JokePageView, AboutMeView, ProjectsView
+    JokePageView, AboutMeView, ProjectsView, PicSomeView
 
 from staticapp.views import punk_Api_beer_app
 
 urlpatterns = [
+    url(r'/picsome/^', PicSomeView.as_view())
     path('admin/', admin.site.urls),
     path('about-me', AboutMeView.as_view()),
     path('projects', ProjectsView.as_view()),
