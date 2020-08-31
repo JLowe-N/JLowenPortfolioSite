@@ -1,0 +1,76 @@
+body {
+    background: gray;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Red Rose', cursive;
+}
+
+header {
+    background: whitesmoke;
+    padding: 5px;
+}
+
+h1 {
+    margin: 20px 0 10px 0;
+    font-size: 60px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 40px;
+}
+
+footer {
+    background: whitesmoke;
+}
+
+main {
+    background: forestgreen;
+    padding: 20px;
+}
+
+button {
+    background: lightblue;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: darkred;    
+}
+
+button:hover, button:focus {
+    background: skyblue;
+    color: black;
+}
+
+
+/* Game Div Styling */
+
+.gameWindow {
+    background: whitesmoke;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.playerWindow {
+    display: inline-block;
+    background: skyblue;
+    width: 45%;
+    margin: 5px 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.gameStat {
+    margin: 60px;
+}
+
+#gameMenu {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#resetBtn {
+    display: none;
+}

@@ -12,13 +12,5 @@ def punk_Api_beer_app(request):
 
 
 class PicSomeView(View):
-    def get(self, request):
-        print(os.path.join(settings.REACT_APP_DIR, 'index.html'))
-        try:
-            with open(os.path.join(settings.REACT_APP_DIR, 'index.html')) as f:
-                return HttpResponse(f.read())
-        except FileNotFoundError:
-            logging.exception('Production build of app not found')
-            return HttpResponse(
-                status=501,
-            )
+    def get(self, request, *args, **kwargs):
+        return render(request, "picsome/index.html", context={})
